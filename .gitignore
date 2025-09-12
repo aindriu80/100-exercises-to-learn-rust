@@ -1,0 +1,35 @@
+# ------------------------------------------------------------------
+# 1️⃣  Rust build artifacts (the `target/` folder)
+# ------------------------------------------------------------------
+# Ignore the entire `target` directory for every crate in the repo.
+# If you really only want to hide the `debug` sub‑folder, replace
+# the next line with `target/debug/` instead.
+target/
+
+# ------------------------------------------------------------------
+# 2️⃣  Individual debug folders (optional, if you prefer)
+# ------------------------------------------------------------------
+# target/debug/        # <- hides `debug` in every `target/` tree
+# target/release/      # <- hides `release` too, if you wish
+# ------------------------------------------------------------------
+# 3️⃣  Miscellaneous useful ignores
+# ------------------------------------------------------------------
+# Cargo.lock is kept in the workspace root, but if you have
+# separate crates you can ignore them in each crate.
+# (Leave it commented out if you want the lock file tracked.)
+Cargo.lock
+
+# Compiled binaries that you might have run locally
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.pdb
+
+# IDE / editor artefacts
+.vscode/
+*.idea/
+*.swp
+*~  
+# ------------------------------------------------------------------
