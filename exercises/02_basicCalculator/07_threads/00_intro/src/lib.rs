@@ -1,0 +1,16 @@
+fn intro() -> &'static str {
+    return "I'm ready to build a concurrent ticket management system!";
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::intro;
+
+    #[test]
+    fn test_intro() {
+        assert_eq!(
+            intro(),
+            "I'm ready to build a concurrent ticket management system!"
+        );
+    }
+}
